@@ -1,0 +1,47 @@
+.head {
+    color: #FFFFFF;
+    background: var(--background-nav);
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+
+    border-bottom: 4px solid #FFFFFF;
+
+    position: absolute;
+
+}
+
+.logo {
+    margin-bottom: 1rem;
+    display: none;
+}
+
+.head__navegacion {
+    text-align: center;
+}
+
+.head__enlace {
+    font-size: 1.1rem;
+
+    display: inline-block;
+
+    margin-right: .7rem;
+    margin-bottom: 1.25rem;
+    margin-left: .7rem;
+}
+
+/*Aqui para PC*/
+@media screen and (min-width: 1024px) {
+    .head {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
