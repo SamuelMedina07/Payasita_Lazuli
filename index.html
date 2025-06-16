@@ -1,186 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="css/reset.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="css/head.css" rel="stylesheet">
-    <link href="css/llamada.css" rel="stylesheet">
-    <link href="css/bases.css" rel="stylesheet">
-    <link href="css/destacados.css" rel="stylesheet">
-    <link href="css/diferenciales.css" rel="stylesheet">
-    <link href="css/nosotros.css" rel="stylesheet">
-    <link href="css/contacto.css" rel="stylesheet">
-    <link href="css/institucional.css" rel="stylesheet">
-    <link href="css/planes.css" rel="stylesheet">
-    <link href="css/footer.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payasita Lazuli</title>
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        .instagram-fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #E4405F;
+            color: white;
+            font-size: 24px;
+            padding: 15px;
+            border-radius: 50%;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .instagram-fab:hover {
+            background-color: #bc2a8d;
+        }
+    </style>
 </head>
 <body>
 
-    <header class="head container">
-        <a href="index.html"><img class="logo" src="img/hola.png" alt="Logo_Principal_Aspeperia"></a>
-            <nav class="head__navegacion">
-                <ul>
-                    <li class="head__enlace"><a href="#sobre_mi">Sobre Mi</a></li>
-                    <li class="head__enlace"><a href="#planes">Planes</a></li>
-                    <li class="head__enlace"><a href="">Blog</a></li>
-                    <li class="head__enlace"><a href="">Destacados</a></li>
-                    <li class="head__enlace"><a href="">Institucional</a></li>
-                    <li class="head__enlace"><a href="">Contactos</a></li>
-                </ul>
-            </nav>
-        </img>
-    </header>
-    <main>
-        <section class="llamada">
-            <h1 class="llamada__titulo">Aplicaciones en la medida</h1>
-            <p class="llamada__texto">Apeperia es una empresa emergente con una manera inovadora de comprar y crear aplicaciones móviles y web.</p>
-            <a href="#" class="llamada__boton boton">Conozca los planes</a>
-        </section>
+<a href="https://instagram.com" target="_blank" class="instagram-fab">
+    <i class="fab fa-instagram"></i>
+</a>
 
-      
-            <section class="destacados container">
-                <h2 class="destacados__titulo">DESTACADOS</h2>
-                <a href="#">
-                    <figure class="destacados__panel">
-                        <img src="img/empezando-a-crear-logo.png" alt="" class="destacados__panel-imagen">
-                        <figC class="destacados__panel-texto">Conozca las primeras etapas de la creación de un logotipo</figC>
-                    </figure>
-                </a>
-                <a href="#">
-                    <figure class="destacados__panel">
-                        <img src="img/sugestiones-fotografias.png" alt="" class="destacados__panel-imagen">
-                        <figC class="destacados__panel-texto">¿Trabajas con fotografía? Conozca esos consejos</figC>
-                    </figure>
-                </a><a href="#" class="destacados__boton boton">Recibir destacados por correo</a></section>
-        
-                <section class="diferenciales container">
-                    <ul class="diferenciales__lista">
-                        <li class="diferenciales__item diferenciales__item-reloj">
-                            <h2 class="item__titulo">Tiempo</h2>
-                            <p class="item__texto">¡El tiempo es importante! Trabajamos en ritmo acelerado, para atender los plazos rigurosamente.</p>
-                        </li>
-                        <li class="diferenciales__item diferenciales__item-dinero">
-                            <h2 class="item__titulo">Enfoque</h2>
-                            <p class="item__texto">Focamos en el pequeño y medio emprendedor, ofrecemos servicios de calidad con precios accesibles.</p>
-                        </li>
-                        <li class="diferenciales__item diferenciales__item-quimica">
-                            <h2 class="item__titulo">Especialistas</h2>
-                            <p class="item__texto">Equipo especializada, con experiencia de mercado. Testamos todos los productos antes del lanzamiento.</p>
-                        </li>
-                    </ul>
-                </section>
-
-                <section class="sobre_nosotros container" id="sobre_mi">
-                    <div class="sobre_nosotros__contenido">
-                        <h2 class="sobre_nosotros__titulo">Sobre Mi</h2>
-                        <p class="sobre_nosotros__texto">
-                            ¡Creamos aplicaciones personalizados para todas las personas!
-                        </p>
-                        <p class="sobre_nosotros__texto">
-                            La manutención de una aplicación no puede ser un custo extra para el cliente. 
-                            En Apeperia firmas nuestro servicio la manutención ya se incluye en el servicio. 
-                            De esa manera no te preocupes con la actualización, es por cuenta de nosotros.
-                        </p>
-                        <p class="sobre_nosotros__texto sobre-nosotros__texto--destacado sobre-nosotros__texto--division">
-                            ¡Tenemos un equipo especializado y exclusivo para proyectos increíbles!
-                        </p>
-                        <p class="sobre_nosotros__texto">Desarrollamos aplicaciones para todas plataformas</p>
-                    </div>
-                    <img src="img/FB001.jpg" alt="ImagenFB001" class="sobre_nosotros__imagen">
-                </section>
-                
-                <section class="planes container" id="planes">
-                    <h2 class="planes__titulo">Planes</h2>
-                    <ul class="planes__tarjetas">
-                        <li class="tarjetas tarjetas--start">
-                            <h3 class="tarjetas__titulo">Start</h3>
-                            <articule class="tarjetas__contenido">
-                                <p class="tarjetas__precio"><em>$ 500</em></p>
-                                <p class="tarjetas__texto">5 manutenciones mensuales</p>
-                                <p class="tarjetas__texto">App SEO</p>
-                                <p class="tarjetas__texto">1 sistema operacional</p>
-                                <a href="#" class="tarjetas__boton tarjetas__boton--start boton">Asignar plan</a>
-                            </articule>
-                        </li>
-                        <li class="tarjetas tarjetas--ultra">
-                            <h3 class="tarjetas__titulo">Ultra</h3>
-                            <articule class="tarjetas__contenido">
-                                <p class="tarjetas__precio"><em>$ 1500</em></p>
-                                <p class="tarjetas__texto">20 manutenciones mensuales</p>
-                                <p class="tarjetas__texto">App SEO</p>
-                                <p class="tarjetas__texto">4 sistemas operacionales</p>
-                                <a href="#" class="tarjetas__boton tarjetas__boton--ultra boton">Asignar plan</a>
-                            </articule>
-                        </li>
-                        <li class="tarjetas tarjetas--mega">
-                            <h3 class="tarjetas__titulo">Premium</h3>
-                            <articule class="tarjetas__contenido">
-                                <p class="tarjetas__precio"><em>L ####</em></p>
-                                <p class="tarjetas__texto">3 Horas de evento</p>
-                                <p class="tarjetas__texto">Animación completa</p>
-                                <p class="tarjetas__texto">Pinta Caritas con maquillaje</p>
-                                <p class="tarjetas__texto">Música Infantil</p>
-                                <p class="tarjetas__texto">Coreografías</p>
-                                <p class="tarjetas__texto">Dinámicas para niños</p>
-                                <p class="tarjetas__texto">Dinámicas para adultos</p>
-                                <a href="#" class="tarjetas__boton tarjetas__boton--mega boton">Me interesa</a>
-                            </articule>
-                        </li>
-                    </ul>
-                </section>
-
-                <section class="contacto container">
-                   
-                    <h2 class="contacto__titulo">Contacto</h2>
-                    <p>Entre en contacto con nosotros</p>
-                    <a href="#" class="contacto__boton boton">Entre en contacto</a>
-                </section>
-                
-                <section class="institucional container">
-                    <h2 class="institucional__titulo">Institucional</h2>
-                    <div class="institucional__contenido">
-                        <div class="institucional__informaciones">
-                           
-                            <p class="institucional__descripcion">Un poco más sobre Apeperia</p>
-                            <address class="institucional__direccion">Calle Vergueiro, 3185<br>
-                                Villa Mariana, São Paulo
-        
-                        <article class="institucional__contacto">
-                            <p>
-                                <a href="tel:+551155712751" class="institucional__contacto-telefono">+55 11 55712751</a> o
-                                <a href="mailto:contato@apeperia.com" class="institucional__contacto-email">contato@apeperia.com</a>
-        
-                            </p>
-                        </article>
-                    </address>
-                        </div>
-                        <video src="img/formacion-java.mp4" class="institucional__video" controls></video>
-                    </div>
-                    
-        </section>
-<footer class="footer container">
-    <img src="img/hola.png" alt="" class="logo">
-    
-    <ul class="footer__social">
-        <li><a href="https://www.facebook.com/profile.php?id=100089622382230"   class="footer__midia" target="_blank"><img src="img/fb.png" alt="icono_FB" class="footer__midiaIMG" class="footer__midiaIMG"></a></li>
-        <li><a href="https://www.instagram.com/payasita_lazuli/" class="footer__midia" target="_blank"><img src="img/insta.png" alt="icono_IG" class="footer__midiaIMG"></a></li>
-        <li><a href="https://api.whatsapp.com/message/3YIBG5DOMKX2P1?autoload=1&app_absent=0" target="_blank" class="footer__midia"><img src="img/wha.png" alt="icono_WH" class="footer__midiaIMG"></a></li>
-    </ul>
-    <nav>
-        <ul class="footer__navegacion">
-            <li class="footer__enlace"><a href="#sobre_mi">Sobre Mi</a></li>
-                    <li class="footer__enlace"><a href="#planes">Planes</a></li>
-                    <li class="footer__enlace"><a href="">Blog</a></li>
-                    <li class="footer__enlace"><a href="">Destacados</a></li>
-                    <li class="footer__enlace"><a href="">Institucional</a></li>
-                    <li class="footer__enlace"><a href="">Contactos</a></li>
-        </ul>
-    </nav>
-</footer>
-    </main>
-    
 </body>
+</html>
+Este botón flotante (FAB) de Instagram aparecerá en la esquina inferior derecha y dirigirá a los usuarios a Instagram. También puedes ajustar los colores y el tamaño para que se adapte a tu diseño. ¡Déjame saber si necesitas más personalización! 🚀
+
+1github.com
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/formats.css">
+</head>
+<body>
+  <header id="header">
+    <img src="img/Profile.jpg" alt="Payasita Lazuli">
+    <h1>Payasita Lazuli🎉</h1>
+    <p>¡Magia, alegría y muchas risas!</p>
+  </header>
+
+  <nav>
+    <a href="#about">Sobre mí</a>
+    <a href="#services">Servicios</a>
+    <a href="#gallery">Galería</a>
+    <a href="#testimonios">Testimonios</a>
+    <a href="#contact">Contacto</a>
+  </nav>
+
+  <section id="about">
+    <h2>Sobre mí</h2>
+    <p style="max-width: 600px; margin: auto; text-align: center;">Soy Lazuli, una payasita carismática con pasión por alegrar los corazones infantiles. Con colores vibrantes, shows únicos y mucho amor por los niños.</p>
+  </section>
+
+  <section class="services" id="services">
+    <h2>Servicios</h2>
+    <ul>
+      <li>🎨 Pintacaritas</li>
+      <li>🎈 Globoflexia</li>
+      <li>🎭 Show de Magia</li>
+      <li>🎉 Animación de Cumpleaños</li>
+    </ul>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <h2>Galería</h2>
+    <img src="https://via.placeholder.com/260x180?text=Fiesta+1" alt="Fiesta 1" />
+    <img src="https://via.placeholder.com/260x180?text=Fiesta+2" alt="Fiesta 2" />
+    <img src="https://via.placeholder.com/260x180?text=Fiesta+3" alt="Fiesta 3" />
+  </section>
+ <h2>Testimonios</h2>
+  <section class="testimonios" id="testimonios">
+    <div class="testimonios-carousel" id="carousel">
+      <!-- Testimonios se insertan dinámicamente -->
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contáctame</h2>
+    <p style="text-align: center;">¡Reserva tu evento hoy con Lazuli! Disponible para todo tipo de celebraciones infantiles.</p>
+        <button onclick="contactar()">Enviar Whatsapp <i class="fab fa-whatsapp"></i></button>
+    
+    <div class="social">
+      <a href="https://www.facebook.com/payasita.lazuli" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Payasita Lazuli - Sonrisas garantizadas 🎈
+  </footer>
+</body>
+  <script src="js/contact.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/testimonies.js"></script>
 </html>
