@@ -61,7 +61,7 @@
     }
 
     section {
-      padding: 60px 10%;
+      padding: 40px 10%;
       position: relative;
     }
 
@@ -89,23 +89,27 @@
       font-size: 1.1rem;
     }
 
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
+     .galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
 
-    .gallery img {
-      width: 260px;
-      border-radius: 15px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-      transition: transform 0.3s;
-    }
+.galeria img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
 
-    .gallery img:hover {
-      transform: scale(1.05);
-    }
+.galeria img:hover {
+  transform: scale(1.05);
+}
 
     .contact button {
       display: block;
@@ -152,45 +156,48 @@
     }
 
     .testimonios {
-      background: white;
-      border-radius: 20px;
-      padding: 40px 20px;
-      margin: 40px auto;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-      max-width: 400px;
-      position: relative;
-      overflow: hidden;
-    }
+  background: white;
+  border-radius: 20px;
+  padding: 40px 20px;
+  margin: 40px auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  max-width: 800px;
+  width: 90%;
+  position: relative;
+  overflow: hidden;
+}
 
-    .testimonios-carousel {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
-    }
+.testimonios-carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
 
-    .testimonio-burbuja {
-      min-width: 100%;
-      padding: 20px;
-      text-align: center;
-    }
+.testimonio-burbuja {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+}
 
-    .testimonio-burbuja img {
-      width: 80px;
-      height: 80px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin-bottom: 10px;
-    }
+.testimonio-burbuja img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
 
-    .testimonio-burbuja h4 {
-      margin: 10px 0 5px;
-      color: var(--azul-oscuro);
-    }
+.testimonio-burbuja h4 {
+  margin: 10px 0 5px;
+  color: var(--azul-oscuro);
+}
 
-    .testimonio-burbuja p {
-      font-size: 1rem;
-      font-style: italic;
-      color: #444;
-    }
+.testimonio-burbuja p {
+  font-size: 1rem;
+  font-style: italic;
+  color: #444;
+}
 
     footer {
       text-align: center;
@@ -199,8 +206,8 @@
       color: white;
     }
 
-
 .contact img {
   width: 36px;
   height: 36px;
 }
+
